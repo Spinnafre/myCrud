@@ -1,0 +1,28 @@
+.header.header{
+    padding: 0px 15px;
+    /* background-color: #50B359; */
+    background: linear-gradient(to right, rgba(235, 51, 72, 0.733), rgba(244, 91, 67, 0.712));
+    overflow: hidden;
+    white-space: nowrap;
+
+    /* box-shadow: 4px 1px 8px rgb(163, 163, 163); */
+    
+}
+.header.header h1{
+    font-size: 2em;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px black;
+    
+    
+}
+
+.header.header>p{
+    color: #ffffff;
+    text-shadow: 2px 2px 3px black;
+    font-size: 1.7em;
+    
+
+}
+.header.header span{
+    padding-left: 10px;
+}

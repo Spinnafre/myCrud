@@ -1,0 +1,98 @@
+/* Refere-se ao documento HTML */
+:root{
+    /* Criei variáveis globais */
+    --bg-dark:rgba(255, 255, 255, 0.986);
+    --bg-logo:rgb(165, 163, 163);
+    --logo-height:100px;
+    --header-height:120px;
+    --menu:165px;
+    --footer-height:50px;
+    --content-height:240px;
+    --shadow:
+        0 2px 23px 0 rgba(0,0,0,0.1)
+        0 2px 49px 0 rgba(0,0,0,0.6)
+    ;
+    
+}
+
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    
+
+}
+.app{
+    margin: 0px;
+    background-color: var(--bg-dark);
+    display: grid;
+    grid-template-columns: var(--content-height) 1fr;
+    grid-template-rows: 
+        var(--header-height)
+        1fr
+        var(--footer-height)
+    ;
+    height: 100vh;
+
+    
+    grid-template-areas: 
+        'Alogo Aheader'
+        'Amenu Acontent'
+        'Amenu Afooter'
+    ;
+}
+aside.logo{
+    grid-area: Alogo;
+}
+header.header{
+    grid-area: Aheader;
+}
+aside.menu-area{
+    grid-area: Amenu;
+}
+main.content{
+    grid-area: Acontent;
+}
+footer.footer{
+    grid-area: Afooter;
+}
+
+@media(max-width:768px){
+    .app{
+        grid-template-rows: 
+            var(--header-height)
+            var(--menu)
+            1fr
+            var(--footer-height)
+        ;
+        grid-template-columns: 
+            220px
+            1fr
+        ;
+        grid-template-areas: 
+            'Alogo Aheader'
+            'Amenu Amenu'
+            'Acontent Acontent'
+            'Afooter Afooter'
+        ;
+    }
+
+}
+@media(max-width:576px){
+    .app{
+        grid-template-rows: 
+            120px
+            var(--menu)
+            1fr
+            var(--footer-height)
+        ;
+        grid-template-columns: 
+            1fr
+        ;
+        grid-template-areas: 
+            'Alogo'
+            'Amenu'
+            'Acontent'
+            'Afooter'
+        ;
+    }
+}

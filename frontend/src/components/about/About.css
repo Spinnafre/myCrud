@@ -1,0 +1,38 @@
+img.img{
+    width: 100%;
+    box-shadow: 4px 1px 8px rgb(163, 163, 163);
+    
+}
+
+.listas{
+    text-decoration: none;
+    list-style:square;
+    margin-left: 0px;
+    font-size: 1.3em;
+
+    background-color: rgb(238, 237, 231);
+    margin-top: 0px;
+    
+
+    /* padding: 2px; */
+}
+.conteudo{
+    margin-top: 60px;
+    box-shadow: 4px 1px 8px rgb(163, 163, 163);
+    /* padding: 2px; */
+}
+ul li{
+    padding: 8px;
+}
+.conteudoImg p{
+    padding-top: 10px;
+}
+.conteudo h1{
+    font-size: 5em;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 0;
+    background-color: rgb(247, 234, 118);
+    /* box-shadow: 4px 1px 8px rgb(163, 163, 163); */
+
+}

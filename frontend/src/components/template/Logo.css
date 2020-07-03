@@ -1,0 +1,46 @@
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    background: linear-gradient(to right, rgb(65, 41, 90), rgb(47, 7, 67));
+    /* background-color: #50B359; */
+    /* border-right: solid 10px linear-gradient(to right, rgb(65, 41, 90), rgb(47, 7, 67));; */
+    /* border-bottom: solid 1px rgba(255, 255, 255, 0.267); */
+    
+    
+    
+    /* box-shadow: 
+    10px 0px 8px 0  #34314867,
+    1px 0px 8px 0 #34314867; */
+}
+.logo img{
+    filter: invert();
+    padding: 0px 15px;
+    width: 100%;
+    
+}
+.logo img:hover{
+    /* width: 98%; */
+    animation-name: logo;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition-timing-function: ease-in;
+
+}
+@keyframes logo{
+    from{width: 220px;}
+    to{
+        width: 195px;
+    }
+}
+
+@media(max-width:576px){
+    aside.logo img{
+        width: 220px;
+        /* height: 100%; */
+    }
+  
+}

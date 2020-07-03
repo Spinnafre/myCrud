@@ -1,0 +1,30 @@
+.tableId{
+    background: linear-gradient(to right, rgb(65, 41, 90), rgb(47, 7, 67));;
+    margin-bottom: 15px;
+    color: white;
+    box-shadow: 3px 2px 1px 0 lightgray;
+}
+table th{
+    text-align: center;
+}
+.Buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+.UserId{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    
+}
+tr td{
+    background-color: rgb(250, 250, 245);
+    border-left: solid 2px white;
+    box-shadow: 3px 2px 1px 0 lightgray;
+    
+}

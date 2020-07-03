@@ -1,0 +1,18 @@
+.footer.footer{
+    /* background-color: #50B359; */
+    background: linear-gradient(to right, rgba(235, 51, 72, 0.733), rgba(244, 91, 67, 0.712));
+    /* background-color: #343148; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 4px 1px 8px rgb(163, 163, 163);
+
+
+
+}
+.footer.footer span{
+    font-size: 1.1em;
+    color: #ffffff;
+    text-shadow: 2px 2px 3px black;
+}
